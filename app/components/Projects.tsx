@@ -88,12 +88,12 @@ export default function Projects() {
     return (
         <section
             id="projects"
-            className="bg-[#0b0f19] px-6 py-24 text-white"
+            className="bg-[#0b0f19] px-6 py-10 text-white"
         >
             <div className="mx-auto max-w-6xl">
 
                 {/* HEADER */}
-                <div className="mb-12">
+                <div className="mb-10">
                     <p className="mb-3 text-sm font-bold uppercase tracking-[0.18em] text-lime-400">
                         Projects
                     </p>
