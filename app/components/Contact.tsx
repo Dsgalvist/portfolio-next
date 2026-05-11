@@ -1,50 +1,92 @@
+import Image from "next/image";
 import Reveal from "./Reveal";
 
 export default function Contact() {
     return (
-        <section id="contact" className="bg-[#0b0f19] px-6 py-24 text-white">
-            <div className="mx-auto max-w-4xl">
+        <section
+            id="contact"
+            className="bg-[#0b0f19] px-6 py-24 text-white"
+        >
+            <div className="mx-auto max-w-6xl">
+
                 <Reveal>
-                    <div className="rounded-3xl border border-white/10 bg-[#10192c] p-10 text-center shadow-[0_20px_80px_rgba(0,0,0,0.28)]">
-                        <p className="mb-3 text-sm font-bold uppercase tracking-[0.18em] text-lime-400">
-                            Contact
-                        </p>
+                    <div className="grid items-center gap-10 rounded-3xl border border-white/10 bg-[#10192c] p-8 shadow-[0_20px_80px_rgba(0,0,0,0.28)] md:grid-cols-[1fr_0.9fr] md:p-10">
 
-                        <h2 className="mb-4 text-3xl font-extrabold md:text-5xl">
-                            Interested in building modern digital experiences.
-                        </h2>
+                        {/* LEFT CONTENT */}
+                        <div>
 
-                        <p className="mx-auto mb-8 max-w-2xl text-slate-400">
-                            I’m open to internships, junior developer roles, and collaborative
-                            projects. Feel free to reach out through email, GitHub, or
-                            LinkedIn.
-                        </p>
+                            <p className="mb-3 text-sm font-bold uppercase tracking-[0.18em] text-lime-400">
+                                Contact
+                            </p>
 
-                        <div className="flex flex-wrap justify-center gap-4">
-                            <a
-                                href="mailto:your@email.com"
-                                className="rounded-full bg-lime-400 px-6 py-3 font-bold text-black transition duration-300 hover:scale-105"
-                            >
-                                Send Email
-                            </a>
+                            <h2 className="mb-5 text-3xl font-extrabold leading-tight md:text-5xl">
+                                Let’s Build Something Great Together.
+                            </h2>
 
-                            <a
-                                href="#"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="rounded-full border border-white/15 px-6 py-3 font-semibold transition duration-300 hover:border-lime-400 hover:text-lime-400"
-                            >
-                                GitHub
-                            </a>
+                            <p className="mb-10 max-w-2xl leading-8 text-slate-400">
+                                Currently open to internships, junior developer opportunities,
+                                and collaborative software projects focused on modern web,
+                                cloud, and mobile development.
+                            </p>
 
-                            <a
-                                href="#"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="rounded-full border border-white/15 px-6 py-3 font-semibold transition duration-300 hover:border-lime-400 hover:text-lime-400"
-                            >
-                                LinkedIn
-                            </a>
+                            {/* BUTTONS */}
+                            <div className="flex flex-wrap gap-4">
+
+                                <a
+                                    href="mailto:your@email.com"
+                                    className="rounded-full bg-lime-400 px-6 py-3 font-bold text-black transition duration-300 hover:scale-105"
+                                >
+                                    Email Me
+                                </a>
+
+                                <a
+                                    href="https://github.com/Dsgalvist"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="rounded-full border border-white/15 px-6 py-3 font-semibold transition duration-300 hover:border-lime-400 hover:text-lime-400"
+                                >
+                                    GitHub
+                                </a>
+
+                                <a
+                                    href="https://linkedin.com"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="rounded-full border border-white/15 px-6 py-3 font-semibold transition duration-300 hover:border-lime-400 hover:text-lime-400"
+                                >
+                                    LinkedIn
+                                </a>
+
+                                <a
+                                    href="/resume.pdf"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="rounded-full border border-white/15 px-6 py-3 font-semibold transition duration-300 hover:border-lime-400 hover:text-lime-400"
+                                >
+                                    Resume
+                                </a>
+                            </div>
+                        </div>
+
+                        {/* RIGHT ANIMATION */}
+                        <div className="relative mx-auto flex w-full max-w-sm items-center justify-center">
+
+                            {/* Glow */}
+                            <div className="absolute -inset-8 rounded-full bg-lime-400/10 blur-3xl" />
+                            <div className="absolute inset-0 rounded-full bg-blue-500/10 blur-[100px]" />
+
+                            {/* Animation Container */}
+                            <div className="relative w-full overflow-hidden rounded-3xl border border-white/10 bg-[#0b0f19] p-4 shadow-[0_20px_60px_rgba(0,0,0,0.35)]">
+
+                                <Image
+                                    src="/brand/animacion.gif"
+                                    alt="Developer animation"
+                                    width={500}
+                                    height={500}
+                                    unoptimized
+                                    className="h-[320px] w-full rounded-2xl object-cover"
+                                />
+                            </div>
                         </div>
                     </div>
                 </Reveal>

@@ -10,6 +10,7 @@ import Contact from "./components/Contact";
 import Certificatios from "./components/Certifications";
 import Game from "./components/Game";
 import Rhino from "./components/Rhino";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <Certificatios />
       <Languages />
       <Contact />
+      <ScrollToTop />
     </>
   );
 }

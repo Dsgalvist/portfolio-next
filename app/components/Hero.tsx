@@ -59,29 +59,11 @@ export default function Hero() {
                             </a>
 
                             <a
-                                href="#"
-                                target="_blank"
+                                href="#contact"
                                 className="rounded-full border border-white/15 px-7 py-3 text-white transition duration-300 hover:border-lime-400 hover:text-lime-400"
                             >
-                                Resume
+                                Contact
                             </a>
-
-                            <a
-                                href="#"
-                                target="_blank"
-                                className="rounded-full border border-white/15 px-5 py-3 text-white transition duration-300 hover:border-lime-400 hover:text-lime-400"
-                            >
-                                GitHub
-                            </a>
-
-                            <a
-                                href="#"
-                                target="_blank"
-                                className="rounded-full border border-white/15 px-5 py-3 text-white transition duration-300 hover:border-lime-400 hover:text-lime-400"
-                            >
-                                LinkedIn
-                            </a>
-
                         </div>
                     </div>
                 </Reveal>

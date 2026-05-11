@@ -2,22 +2,22 @@ import Image from "next/image";
 
 const certs = [
     {
-        title: "Master Python Program — In Progress",
+        title: "Master Python Program",
         subtitle: "Daxus Latam · 2026",
         image: "/certifications/Daxus.png",
     },
     {
-        title: "Master Artificial Intelligence — In Progress",
+        title: "Master Artificial Intelligence",
         subtitle: "Daxus Latam · 2026",
         image: "/certifications/Daxus.png",
     },
     {
-        title: "AZ-900 Azure Fundamentals — In Progress",
+        title: "AZ-900 Azure Fundamentals",
         subtitle: "Microsoft Azure / SAIT CPSY 300",
         image: "/certifications/azure.png",
     },
     {
-        title: "AZ-204 Developing Solutions for Azure — In Progress",
+        title: "AZ-204 Developing Solutions for Azure",
         subtitle: "Microsoft Azure / SAIT CPSY 300",
         image: "/certifications/azure.png",
     },
