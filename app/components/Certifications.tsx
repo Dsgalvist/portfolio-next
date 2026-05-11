@@ -4,12 +4,12 @@ const certs = [
     {
         title: "Master Python Program — In Progress",
         subtitle: "Daxus Latam · 2026",
-        image: "/certifications/daxus.png",
+        image: "/certifications/Daxus.png",
     },
     {
         title: "Master Artificial Intelligence — In Progress",
         subtitle: "Daxus Latam · 2026",
-        image: "/certifications/daxus.png",
+        image: "/certifications/Daxus.png",
     },
     {
         title: "AZ-900 Azure Fundamentals — In Progress",
@@ -24,7 +24,7 @@ const certs = [
     {
         title: "Python in Practice Certificate",
         subtitle: "Daxus Latam · Issued Apr 2026",
-        image: "/certifications/daxus.png",
+        image: "/certifications/Daxus.png",
     },
     {
         title: "CCNA: Introduction to Networks",
