@@ -5,85 +5,79 @@ import { useState } from "react";
 
 const projects = [
     {
-        title: "Shopping List Web App",
-        stack: ["React / Next.js / Tailwind"],
+        title: "Currently Building",
+        stack: "Coming Soon",
         description:
-            "Built a full-featured shopping list application with integrated meal recommendations, leveraging React state management and dynamic data rendering to enhance usability and user engagement.",
+            "A new full-stack project currently in development focused on scalable architecture, modern UI/UX, and real-world functionality.",
+        primaryLabel: "Coming Soon",
+        secondaryLabel: "In Progress",
+        imageLabel: "Future Project",
+        primaryHref: "#",
+        secondaryHref: "#",
+    },
+
+    {
+        title: "LaptopHub",
+        stack: "Next.js / TypeScript / Firebase",
+        description:
+            "A full-stack marketplace platform for buying and selling laptops with authentication, advanced filtering, favorites, image uploads, and responsive UI design.",
         primaryLabel: "Live Demo",
         secondaryLabel: "GitHub",
-        image: "/projects/shopping.png",
-        primaryHref: "https://cprg306-assignments-murex-eta.vercel.app/week-8",
-        secondaryHref: "https://github.com/Dsgalvist/cprg306-assignments",
+        image: "/projects/laptophub.png",
+        primaryHref: "https://laptophub-opal.vercel.app/",
+        secondaryHref: "https://github.com/Dsgalvist/laptophub",
     },
+
+    {
+        title: "ByteCraft — Inventory System Concept",
+        stack: "Systems Analysis / UI Design / Team Project",
+        description:
+            "A collaborative software analysis and design project focused on inventory tracking, employee management, and business workflow planning for a construction-focused company.",
+        primaryLabel: "Details",
+        secondaryLabel: "GitHub",
+        imageLabel: "ByteCraft",
+        primaryHref: "#",
+        secondaryHref: "#",
+    },
+
     {
         title: "UX/UI Design — Language Learning App",
         stack: "Figma / UI Design / UX",
         description:
-            "Designed a language learning application focused on intuitive navigation and engaging user experience.",
+            "Designed a language learning application focused on intuitive navigation, user engagement, and clean visual structure through research-driven UX decisions.",
         primaryLabel: "Watch Demo",
         secondaryLabel: "Details",
         image: "/projects/figma.png",
         video: "/projects/figma.mp4",
         details: `This project focuses on designing a language learning application that addresses common issues such as paywalls, lack of engagement, and repetitive content.
 
-Through research including surveys and interviews, we identified key user needs across students, travelers, and professionals.
+Through research including surveys and interviews, key user needs were identified across students, travelers, and professionals.
 
-The solution was designed in Figma with a focus on intuitive navigation, interactive features, and a clean visual structure. Features like messaging, leaderboards, and notifications were added to improve engagement and usability.`,
+The application was designed in Figma with a focus on intuitive navigation, interactive features, and modern UI structure. Features such as messaging, leaderboards, and notifications were added to improve usability and engagement.`,
     },
-    {
-        title: "ToDo Task Manager",
-        stack: "React / JavaScript / CSS",
-        description:
-            "A task management app focused on user interaction, component-based structure and front-end functionality.",
-        primaryLabel: "Live Demo",
-        secondaryLabel: "GitHub",
-        imageLabel: "ToDo App",
-        primaryHref: "#",
-        secondaryHref: "#",
-    },
-    {
-        title: "Authentication Flow App",
-        stack: "React / Expo / Authentication Flow",
-        description:
-            "A sign-in and sign-up interface with form handling, validation, and authentication flow design.",
-        primaryLabel: "Details",
-        secondaryLabel: "GitHub",
-        imageLabel: "Authentication App",
-        primaryHref: "#",
-        secondaryHref: "#",
-    },
-    {
-        title: "Calculator Mobile App",
-        stack: "React Native",
-        description:
-            "A mobile calculator application developed with React Native, emphasizing app architecture, component reuse, and mobile UI structure.",
-        primaryLabel: "Details",
-        secondaryLabel: "GitHub",
-        imageLabel: "Calculator App",
-        primaryHref: "#",
-        secondaryHref: "#",
-    },
+
     {
         title: "Database CRUD Application",
-        stack: "C# / Access Database / WinForms",
+        stack: "C# / SQL / WinForms",
         description:
-            "A desktop CRUD application connected to a database, with insert, update, delete, and data display features.",
+            "A desktop CRUD application connected to a database with insert, update, delete, and data visualization functionality using C# and Windows Forms.",
         primaryLabel: "Details",
         secondaryLabel: "GitHub",
-        imageLabel: "Database CRUD",
+        imageLabel: "CRUD App",
         primaryHref: "#",
         secondaryHref: "#",
     },
+
     {
-        title: "ByteCraft Inventory System Concept",
-        stack: "React Native / Systems Analysis / UI Design",
+        title: "Shopping List Web App",
+        stack: "React / Next.js / Tailwind",
         description:
-            "A team project focused on designing an inventory and employee system with app planning, diagrams, and collaborative software design.",
-        primaryLabel: "Details",
+            "A shopping list application with dynamic item management and integrated meal recommendations using React state management and API integration.",
+        primaryLabel: "Live Demo",
         secondaryLabel: "GitHub",
-        imageLabel: "ByteCraft",
-        primaryHref: "#",
-        secondaryHref: "#",
+        image: "/projects/shopping.png",
+        primaryHref: "https://cprg306-assignments-murex-eta.vercel.app/week-8",
+        secondaryHref: "https://github.com/Dsgalvist/cprg306-assignments",
     },
 ];
 
@@ -97,22 +91,34 @@ export default function Projects() {
             className="bg-[#0b0f19] px-6 py-24 text-white"
         >
             <div className="mx-auto max-w-6xl">
+
+                {/* HEADER */}
                 <div className="mb-12">
                     <p className="mb-3 text-sm font-bold uppercase tracking-[0.18em] text-lime-400">
                         Projects
                     </p>
+
                     <h2 className="text-3xl font-extrabold md:text-5xl">
                         Featured Projects
                     </h2>
                 </div>
 
+                {/* GRID */}
                 <div className="grid gap-6 md:grid-cols-2">
-                    {projects.map((project) => (
+
+                    {projects.map((project, index) => (
                         <article
                             key={project.title}
-                            className="overflow-hidden rounded-3xl border border-white/10 bg-[#10192c] transition duration-300 hover:-translate-y-1 hover:border-lime-400/40"
+                            className={`overflow-hidden rounded-3xl border bg-[#10192c] transition duration-300 hover:-translate-y-1 ${
+                                index === 0
+                                    ? "border-lime-400/30 shadow-[0_0_40px_rgba(163,230,53,0.06)]"
+                                    : "border-white/10 hover:border-lime-400/40"
+                            }`}
                         >
+
+                            {/* IMAGE */}
                             <div className="h-52 overflow-hidden">
+
                                 {"image" in project && project.image ? (
                                     <Image
                                         src={project.image}
@@ -122,13 +128,24 @@ export default function Projects() {
                                         className="h-full w-full object-cover"
                                     />
                                 ) : (
-                                    <div className="flex h-full items-center justify-center bg-[linear-gradient(135deg,rgba(163,230,53,0.14),rgba(255,255,255,0.02))] text-center text-2xl font-extrabold tracking-tight text-white">
-                                        {"imageLabel" in project ? project.imageLabel : project.title}
+                                    <div className="flex h-full items-center justify-center bg-[linear-gradient(135deg,rgba(163,230,53,0.12),rgba(255,255,255,0.02))] text-center">
+
+                                        <div>
+                                            <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-lime-400">
+                                                Coming Soon
+                                            </p>
+
+                                            <h3 className="text-3xl font-extrabold text-white">
+                                                Future Project
+                                            </h3>
+                                        </div>
                                     </div>
                                 )}
                             </div>
 
+                            {/* CONTENT */}
                             <div className="p-6">
+
                                 <p className="mb-2 text-sm font-semibold text-lime-400">
                                     {project.stack}
                                 </p>
@@ -142,6 +159,7 @@ export default function Projects() {
                                 </p>
 
                                 <div className="flex gap-4">
+
                                     {"video" in project && project.video ? (
                                         <button
                                             onClick={() => setSelectedVideo(project.video)}
@@ -154,7 +172,11 @@ export default function Projects() {
                                             href={project.primaryHref}
                                             target="_blank"
                                             rel="noreferrer"
-                                            className="rounded-full bg-lime-400 px-5 py-3 font-bold text-black transition hover:scale-105"
+                                            className={`rounded-full px-5 py-3 font-bold transition ${
+                                                index === 0
+                                                    ? "cursor-default border border-lime-400/20 bg-lime-400/10 text-lime-400"
+                                                    : "bg-lime-400 text-black hover:scale-105"
+                                            }`}
                                         >
                                             {project.primaryLabel}
                                         </a>
@@ -184,9 +206,12 @@ export default function Projects() {
                 </div>
             </div>
 
+            {/* VIDEO MODAL */}
             {selectedVideo && (
                 <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 px-6">
+
                     <div className="relative w-full max-w-5xl rounded-3xl border border-white/10 bg-[#10192c] p-4 shadow-2xl">
+
                         <button
                             onClick={() => setSelectedVideo(null)}
                             className="absolute right-4 top-4 z-10 rounded-full border border-white/15 bg-black/40 px-3 py-1 text-sm text-white transition hover:border-lime-400 hover:text-lime-400"
@@ -204,9 +229,12 @@ export default function Projects() {
                 </div>
             )}
 
+            {/* DETAILS MODAL */}
             {selectedDetails && (
                 <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 px-6">
+
                     <div className="relative w-full max-w-3xl rounded-3xl border border-white/10 bg-[#10192c] p-6 shadow-2xl">
+
                         <button
                             onClick={() => setSelectedDetails(null)}
                             className="absolute right-4 top-4 z-10 rounded-full border border-white/15 bg-black/40 px-3 py-1 text-sm text-white transition hover:border-lime-400 hover:text-lime-400"

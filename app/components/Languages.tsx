@@ -26,7 +26,7 @@ export default function Languages() {
 
                     <div className="rounded-3xl border border-white/10 bg-[#10192c] p-6 text-center">
                         <h3 className="text-xl font-bold">French</h3>
-                        <p className="text-slate-400 mt-2">Low Intermediate</p>
+                        <p className="text-slate-400 mt-2">Beginner</p>
                     </div>
 
                 </div>
