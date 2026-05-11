@@ -29,7 +29,7 @@ export default function Education() {
                             </div>
                         </div>
 
-                        <p className="text-slate-400">Expected Completion: 2026</p>
+                        <p className="text-slate-400">Jan 2025 – Aug 2026</p>
                     </div>
 
                     <div className="rounded-3xl border border-white/10 bg-[#10192c] p-6 h-full flex flex-col justify-between hover:border-lime-400/40 transition duration-300">
@@ -49,7 +49,7 @@ export default function Education() {
                             </div>
                         </div>
 
-                        <p className="text-slate-400">Completed: 2022</p>
+                        <p className="text-slate-400">Jan 2021 – Nov 2022</p>
                     </div>
                 </div>
             </div>

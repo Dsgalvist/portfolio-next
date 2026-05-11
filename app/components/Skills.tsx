@@ -150,7 +150,9 @@ export default function Skills() {
                                 "Visual Studio",
                                 "Eclipse",
                                 "Vercel",
-                                "Figma"
+                                "Figma",
+                                "VMware Workstation Pro",
+                                "Software Ideas Modeler"
                             ].map((skill) => (
                                 <span
                                     key={skill}
