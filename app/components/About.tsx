@@ -17,17 +17,16 @@ export default function About() {
                     <div className="grid gap-6 md:grid-cols-[1.2fr_0.8fr]">
                         <div className="rounded-3xl border border-white/10 bg-[#10192c] p-8 hover:border-lime-400/40 transition duration-300">
                             <p className="text-[16px] leading-8 text-slate-300">
-                                I am a Software Development student at SAIT in Calgary, with
-                                hands-on experience building websites, mobile apps, and academic
-                                software projects. My work includes front-end development with
-                                React, JavaScript, HTML, CSS, and React Native, along with
-                                experience in C#, SQL, databases, and UI-focused development.
+                                I am a Software Development student at SAIT in Calgary, building full-stack web applications, mobile apps, 
+                                and academic software projects. My work includes React, Next.js, TypeScript, Firebase, SQL, C#, Python, and React 
+                                Native, with a focus on clean interfaces and practical real-world functionality.
+
                             </p>
 
                             <p className="mt-5 text-[16px] leading-8 text-slate-400">
-                                I enjoy transforming ideas into clean, functional, and modern
-                                digital products while continuing to strengthen my technical and
-                                professional skills.
+                                I enjoy turning ideas into functional digital products 
+                                while continuing to strengthen my backend, database, 
+                                and software development skills.
                             </p>
                         </div>
 
@@ -47,7 +46,7 @@ export default function About() {
                             <div className="rounded-3xl border border-white/10 bg-[#10192c] p-6 hover:border-lime-400/40 transition duration-300">
                                 <p className="mb-2 text-sm text-slate-400">Focus</p>
                                 <h3 className="text-xl font-bold">
-                                    Front-End Development, React, UI, Mobile Apps
+                                    Full-Stack Development, React, Databases, Mobile Apps
                                 </h3>
                             </div>
                         </div>

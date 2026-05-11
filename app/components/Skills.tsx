@@ -8,8 +8,9 @@ export default function Skills() {
                     <p className="mb-3 text-sm font-bold uppercase tracking-[0.18em] text-lime-400">
                         Skills
                     </p>
-                    <h2 className="text-3xl md:text-5xl font-extrabold">
-                        Tech Stack
+
+                    <h2 className="text-3xl font-extrabold md:text-5xl">
+                        Technical Skills
                     </h2>
                 </div>
 
@@ -18,10 +19,48 @@ export default function Skills() {
 
                     {/* FRONTEND */}
                     <div className="rounded-3xl border border-white/10 bg-[#10192c] p-6">
-                        <h3 className="mb-4 text-xl font-bold">Front-End</h3>
+                        <h3 className="mb-5 text-xl font-bold">
+                            Frontend
+                        </h3>
+
                         <div className="flex flex-wrap gap-3">
-                            {["HTML", "CSS", "JavaScript", "React", "Next.js", "Tailwind CSS"].map(skill => (
-                                <span key={skill} className="rounded-full border border-lime-400/40 px-4 py-2 text-sm hover:bg-lime-400/10 transition">
+                            {[
+                                "HTML",
+                                "CSS",
+                                "JavaScript",
+                                "React",
+                                "Next.js",
+                                "Tailwind CSS",
+                                "TypeScript"
+                            ].map((skill) => (
+                                <span
+                                    key={skill}
+                                    className="rounded-full border border-lime-400/40 px-4 py-2 text-sm transition hover:bg-lime-400/10"
+                                >
+                                    {skill}
+                                </span>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* BACKEND */}
+                    <div className="rounded-3xl border border-white/10 bg-[#10192c] p-6">
+                        <h3 className="mb-5 text-xl font-bold">
+                            Backend & Cloud
+                        </h3>
+
+                        <div className="flex flex-wrap gap-3">
+                            {[
+                                "Firebase",
+                                "Supabase",
+                                "Flask",
+                                "REST APIs",
+                                "Firestore"
+                            ].map((skill) => (
+                                <span
+                                    key={skill}
+                                    className="rounded-full border border-lime-400/40 px-4 py-2 text-sm transition hover:bg-lime-400/10"
+                                >
                                     {skill}
                                 </span>
                             ))}
@@ -30,10 +69,20 @@ export default function Skills() {
 
                     {/* MOBILE */}
                     <div className="rounded-3xl border border-white/10 bg-[#10192c] p-6">
-                        <h3 className="mb-4 text-xl font-bold">Mobile</h3>
+                        <h3 className="mb-5 text-xl font-bold">
+                            Mobile
+                        </h3>
+
                         <div className="flex flex-wrap gap-3">
-                            {["React Native", "Expo"].map(skill => (
-                                <span key={skill} className="rounded-full border border-lime-400/40 px-4 py-2 text-sm hover:bg-lime-400/10 transition">
+                            {[
+                                "React Native",
+                                "Expo",
+                                "AsyncStorage"
+                            ].map((skill) => (
+                                <span
+                                    key={skill}
+                                    className="rounded-full border border-lime-400/40 px-4 py-2 text-sm transition hover:bg-lime-400/10"
+                                >
                                     {skill}
                                 </span>
                             ))}
@@ -42,10 +91,45 @@ export default function Skills() {
 
                     {/* PROGRAMMING */}
                     <div className="rounded-3xl border border-white/10 bg-[#10192c] p-6">
-                        <h3 className="mb-4 text-xl font-bold">Programming</h3>
+                        <h3 className="mb-5 text-xl font-bold">
+                            Programming
+                        </h3>
+
                         <div className="flex flex-wrap gap-3">
-                            {["C#", "Python", "Java", "SQL"].map(skill => (
-                                <span key={skill} className="rounded-full border border-lime-400/40 px-4 py-2 text-sm hover:bg-lime-400/10 transition">
+                            {[
+                                "Python",
+                                "C#",
+                                "Java",
+                                "SQL"
+                            ].map((skill) => (
+                                <span
+                                    key={skill}
+                                    className="rounded-full border border-lime-400/40 px-4 py-2 text-sm transition hover:bg-lime-400/10"
+                                >
+                                    {skill}
+                                </span>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* DATABASES */}
+                    <div className="rounded-3xl border border-white/10 bg-[#10192c] p-6">
+                        <h3 className="mb-5 text-xl font-bold">
+                            Databases
+                        </h3>
+
+                        <div className="flex flex-wrap gap-3">
+                            {[
+                                "PostgreSQL",
+                                "MySQL",
+                                "Oracle APEX",
+                                "Microsoft Access",
+                                "pgAdmin 4"
+                            ].map((skill) => (
+                                <span
+                                    key={skill}
+                                    className="rounded-full border border-lime-400/40 px-4 py-2 text-sm transition hover:bg-lime-400/10"
+                                >
                                     {skill}
                                 </span>
                             ))}
@@ -54,7 +138,10 @@ export default function Skills() {
 
                     {/* TOOLS */}
                     <div className="rounded-3xl border border-white/10 bg-[#10192c] p-6">
-                        <h3 className="mb-4 text-xl font-bold">Tools</h3>
+                        <h3 className="mb-5 text-xl font-bold">
+                            Tools
+                        </h3>
+
                         <div className="flex flex-wrap gap-3">
                             {[
                                 "Git",
@@ -63,34 +150,36 @@ export default function Skills() {
                                 "Visual Studio",
                                 "Eclipse",
                                 "Vercel",
-                                "VMware Workstation Pro",
-                                "Software Ideas Modeler"
-                            ].map(skill => (
-                                <span key={skill} className="rounded-full border border-lime-400/40 px-4 py-2 text-sm hover:bg-lime-400/10 transition">
+                                "Figma"
+                            ].map((skill) => (
+                                <span
+                                    key={skill}
+                                    className="rounded-full border border-lime-400/40 px-4 py-2 text-sm transition hover:bg-lime-400/10"
+                                >
                                     {skill}
                                 </span>
                             ))}
                         </div>
                     </div>
 
-                    {/* DATABASE */}
-                    <div className="rounded-3xl border border-white/10 bg-[#10192c] p-6">
-                        <h3 className="mb-4 text-xl font-bold">Database</h3>
-                        <div className="flex flex-wrap gap-3">
-                            {["MySQL", "Access", "Oracle APEX", "PostgreSQL", "Firebase", "pgAdmin 4"].map(skill => (
-                                <span key={skill} className="rounded-full border border-lime-400/40 px-4 py-2 text-sm hover:bg-lime-400/10 transition">
-                                    {skill}
-                                </span>
-                            ))}
-                        </div>
-                    </div>
+                    {/* ADDITIONAL */}
+                    <div className="rounded-3xl border border-white/10 bg-[#10192c] p-6 md:col-span-2">
+                        <h3 className="mb-5 text-xl font-bold">
+                            Additional Skills
+                        </h3>
 
-                    {/* CREATIVE */}
-                    <div className="rounded-3xl border border-white/10 bg-[#10192c] p-6">
-                        <h3 className="mb-4 text-xl font-bold">Creative & Other</h3>
                         <div className="flex flex-wrap gap-3">
-                            {["Godot", "Rhino 8", "Figma", "Cisco Networking", "3D Modeling", "Game Development"].map(skill => (
-                                <span key={skill} className="rounded-full border border-lime-400/40 px-4 py-2 text-sm hover:bg-lime-400/10 transition">
+                            {[
+                                "Rhino 8",
+                                "Cisco Networking",
+                                "Godot",
+                                "Game Development",
+                                "3D Modeling"
+                            ].map((skill) => (
+                                <span
+                                    key={skill}
+                                    className="rounded-full border border-lime-400/40 px-4 py-2 text-sm transition hover:bg-lime-400/10"
+                                >
                                     {skill}
                                 </span>
                             ))}

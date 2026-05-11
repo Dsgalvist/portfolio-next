@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 
 const projects = [
     {
@@ -11,6 +14,21 @@ const projects = [
         image: "/projects/shopping.png",
         primaryHref: "https://cprg306-assignments-murex-eta.vercel.app/week-8",
         secondaryHref: "https://github.com/Dsgalvist/cprg306-assignments",
+    },
+    {
+        title: "UX/UI Design — Language Learning App",
+        stack: "Figma / UI Design / UX",
+        description:
+            "Designed a language learning application focused on intuitive navigation and engaging user experience.",
+        primaryLabel: "Watch Demo",
+        secondaryLabel: "Details",
+        image: "/projects/figma.png",
+        video: "/projects/figma.mp4",
+        details: `This project focuses on designing a language learning application that addresses common issues such as paywalls, lack of engagement, and repetitive content.
+
+Through research including surveys and interviews, we identified key user needs across students, travelers, and professionals.
+
+The solution was designed in Figma with a focus on intuitive navigation, interactive features, and a clean visual structure. Features like messaging, leaderboards, and notifications were added to improve engagement and usability.`,
     },
     {
         title: "ToDo Task Manager",
@@ -70,6 +88,9 @@ const projects = [
 ];
 
 export default function Projects() {
+    const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
+    const [selectedDetails, setSelectedDetails] = useState<string | null>(null);
+
     return (
         <section
             id="projects"
@@ -121,25 +142,88 @@ export default function Projects() {
                                 </p>
 
                                 <div className="flex gap-4">
-                                    <a
-                                        href={project.primaryHref}
-                                        className="rounded-full bg-lime-400 px-5 py-3 font-bold text-black transition hover:scale-105"
-                                    >
-                                        {project.primaryLabel}
-                                    </a>
+                                    {"video" in project && project.video ? (
+                                        <button
+                                            onClick={() => setSelectedVideo(project.video)}
+                                            className="rounded-full bg-lime-400 px-5 py-3 font-bold text-black transition hover:scale-105"
+                                        >
+                                            {project.primaryLabel}
+                                        </button>
+                                    ) : (
+                                        <a
+                                            href={project.primaryHref}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            className="rounded-full bg-lime-400 px-5 py-3 font-bold text-black transition hover:scale-105"
+                                        >
+                                            {project.primaryLabel}
+                                        </a>
+                                    )}
 
-                                    <a
-                                        href={project.secondaryHref}
-                                        className="rounded-full border border-white/15 px-5 py-3 font-semibold text-white transition hover:border-lime-400 hover:text-lime-400"
-                                    >
-                                        {project.secondaryLabel}
-                                    </a>
+                                    {"details" in project && project.details ? (
+                                        <button
+                                            onClick={() => setSelectedDetails(project.details)}
+                                            className="rounded-full border border-white/15 px-5 py-3 font-semibold text-white transition hover:border-lime-400 hover:text-lime-400"
+                                        >
+                                            {project.secondaryLabel}
+                                        </button>
+                                    ) : (
+                                        <a
+                                            href={project.secondaryHref}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            className="rounded-full border border-white/15 px-5 py-3 font-semibold text-white transition hover:border-lime-400 hover:text-lime-400"
+                                        >
+                                            {project.secondaryLabel}
+                                        </a>
+                                    )}
                                 </div>
                             </div>
                         </article>
                     ))}
                 </div>
             </div>
+
+            {selectedVideo && (
+                <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 px-6">
+                    <div className="relative w-full max-w-5xl rounded-3xl border border-white/10 bg-[#10192c] p-4 shadow-2xl">
+                        <button
+                            onClick={() => setSelectedVideo(null)}
+                            className="absolute right-4 top-4 z-10 rounded-full border border-white/15 bg-black/40 px-3 py-1 text-sm text-white transition hover:border-lime-400 hover:text-lime-400"
+                        >
+                            Close
+                        </button>
+
+                        <video
+                            src={selectedVideo}
+                            controls
+                            autoPlay
+                            className="max-h-[80vh] w-full rounded-2xl"
+                        />
+                    </div>
+                </div>
+            )}
+
+            {selectedDetails && (
+                <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 px-6">
+                    <div className="relative w-full max-w-3xl rounded-3xl border border-white/10 bg-[#10192c] p-6 shadow-2xl">
+                        <button
+                            onClick={() => setSelectedDetails(null)}
+                            className="absolute right-4 top-4 z-10 rounded-full border border-white/15 bg-black/40 px-3 py-1 text-sm text-white transition hover:border-lime-400 hover:text-lime-400"
+                        >
+                            Close
+                        </button>
+
+                        <h3 className="mb-4 text-2xl font-bold text-lime-400">
+                            Project Details
+                        </h3>
+
+                        <p className="whitespace-pre-line leading-7 text-slate-300">
+                            {selectedDetails}
+                        </p>
+                    </div>
+                </div>
+            )}
         </section>
     );
 }
