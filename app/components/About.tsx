@@ -17,16 +17,15 @@ export default function About() {
                     <div className="grid gap-6 md:grid-cols-[1.2fr_0.8fr]">
                         <div className="rounded-3xl border border-white/10 bg-[#10192c] p-8 hover:border-lime-400/40 transition duration-300">
                             <p className="text-[16px] leading-8 text-slate-300">
-                                I am a Software Development student at SAIT in Calgary, building full-stack web applications, mobile apps, 
-                                and academic software projects. My work includes React, Next.js, TypeScript, Firebase, SQL, C#, Python, and React 
-                                Native, with a focus on clean interfaces and practical real-world functionality.
-
+                                I am a Software Development graduate from SAIT in Calgary with experience building full-stack, 
+                                cloud, and AI-powered applications. My work spans web development, databases, cloud services, 
+                                machine learning, and AI workflows using technologies such as React, TypeScript, Python, PostgreSQL, Azure, and Microsoft Foundry.
                             </p>
 
                             <p className="mt-5 text-[16px] leading-8 text-slate-400">
-                                I enjoy turning ideas into functional digital products 
-                                while continuing to strengthen my backend, database, 
-                                and software development skills.
+                                I enjoy turning real-world problems into practical software solutions, from enterprise management platforms and cloud applications 
+                                to AI-assisted systems. I am currently focused on growing as a software developer and contributing to products that combine 
+                                clean user experiences with reliable, scalable technology.
                             </p>
                         </div>
 
@@ -46,7 +45,7 @@ export default function About() {
                             <div className="rounded-3xl border border-white/10 bg-[#10192c] p-6 hover:border-lime-400/40 transition duration-300">
                                 <p className="mb-2 text-sm text-slate-400">Focus</p>
                                 <h3 className="text-xl font-bold">
-                                    Full-Stack Development, React, Databases, Mobile Apps
+                                    Full-Stack Development, Cloud Computing, AI & Databases
                                 </h3>
                             </div>
                         </div>

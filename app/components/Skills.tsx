@@ -27,11 +27,11 @@ export default function Skills() {
                             {[
                                 "HTML",
                                 "CSS",
+                                "TypeScript",
                                 "JavaScript",
                                 "React",
                                 "Next.js",
-                                "Tailwind CSS",
-                                "TypeScript"
+                                "Tailwind CSS"
                             ].map((skill) => (
                                 <span
                                     key={skill}
@@ -51,11 +51,90 @@ export default function Skills() {
 
                         <div className="flex flex-wrap gap-3">
                             {[
-                                "Firebase",
-                                "Supabase",
+                                "Node.js",
+                                "Express.js",
                                 "Flask",
                                 "REST APIs",
+                                "Microsoft Azure",
+                                "Azure Functions",
+                                "Azure Blob Storage",
+                                "Supabase",
+                                "Firebase",
                                 "Firestore"
+                            ].map((skill) => (
+                                <span
+                                    key={skill}
+                                    className="rounded-full border border-lime-400/40 px-4 py-2 text-sm transition hover:bg-lime-400/10"
+                                >
+                                    {skill}
+                                </span>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* AI & MACHINE LEARNING */}
+                    <div className="rounded-3xl border border-white/10 bg-[#10192c] p-6">
+                        <h3 className="mb-5 text-xl font-bold">
+                            AI & Machine Learning
+                        </h3>
+
+                        <div className="flex flex-wrap gap-3">
+                            {[
+                                "Microsoft Foundry",
+                                "Azure AI",
+                                "AI Agents",
+                                "SecML",
+                                "SVM",
+                                "Adversarial ML"
+                            ].map((skill) => (
+                                <span
+                                    key={skill}
+                                    className="rounded-full border border-lime-400/40 px-4 py-2 text-sm transition hover:bg-lime-400/10"
+                                >
+                                    {skill}
+                                </span>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* PROGRAMMING LANGUAGES */}
+                    <div className="rounded-3xl border border-white/10 bg-[#10192c] p-6">
+                        <h3 className="mb-5 text-xl font-bold">
+                            Programming Languages
+                        </h3>
+
+                        <div className="flex flex-wrap gap-3">
+                            {[
+                                "Python",
+                                "C#",
+                                "Java",
+                                "JavaScript",
+                                "TypeScript",
+                                "SQL"
+                            ].map((skill) => (
+                                <span
+                                    key={skill}
+                                    className="rounded-full border border-lime-400/40 px-4 py-2 text-sm transition hover:bg-lime-400/10"
+                                >
+                                    {skill}
+                                </span>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* DATABASES */}
+                    <div className="rounded-3xl border border-white/10 bg-[#10192c] p-6">
+                        <h3 className="mb-5 text-xl font-bold">
+                            Databases
+                        </h3>
+
+                        <div className="flex flex-wrap gap-3">
+                            {[
+                                "PostgreSQL",
+                                "MySQL",
+                                "Azure Cosmos DB",
+                                "Firebase / Firestore",
+                                "Microsoft Access"
                             ].map((skill) => (
                                 <span
                                     key={skill}
@@ -89,53 +168,6 @@ export default function Skills() {
                         </div>
                     </div>
 
-                    {/* PROGRAMMING */}
-                    <div className="rounded-3xl border border-white/10 bg-[#10192c] p-6">
-                        <h3 className="mb-5 text-xl font-bold">
-                            Programming
-                        </h3>
-
-                        <div className="flex flex-wrap gap-3">
-                            {[
-                                "Python",
-                                "C#",
-                                "Java",
-                                "SQL"
-                            ].map((skill) => (
-                                <span
-                                    key={skill}
-                                    className="rounded-full border border-lime-400/40 px-4 py-2 text-sm transition hover:bg-lime-400/10"
-                                >
-                                    {skill}
-                                </span>
-                            ))}
-                        </div>
-                    </div>
-
-                    {/* DATABASES */}
-                    <div className="rounded-3xl border border-white/10 bg-[#10192c] p-6">
-                        <h3 className="mb-5 text-xl font-bold">
-                            Databases
-                        </h3>
-
-                        <div className="flex flex-wrap gap-3">
-                            {[
-                                "PostgreSQL",
-                                "MySQL",
-                                "Oracle APEX",
-                                "Microsoft Access",
-                                "pgAdmin 4"
-                            ].map((skill) => (
-                                <span
-                                    key={skill}
-                                    className="rounded-full border border-lime-400/40 px-4 py-2 text-sm transition hover:bg-lime-400/10"
-                                >
-                                    {skill}
-                                </span>
-                            ))}
-                        </div>
-                    </div>
-
                     {/* TOOLS */}
                     <div className="rounded-3xl border border-white/10 bg-[#10192c] p-6">
                         <h3 className="mb-5 text-xl font-bold">
@@ -151,6 +183,10 @@ export default function Skills() {
                                 "Eclipse",
                                 "Vercel",
                                 "Figma",
+                                "Docker",
+                                "Postman",
+                                "Jira",
+                                "Google Colab",
                                 "VMware Workstation Pro",
                                 "Software Ideas Modeler"
                             ].map((skill) => (
@@ -165,7 +201,7 @@ export default function Skills() {
                     </div>
 
                     {/* ADDITIONAL */}
-                    <div className="rounded-3xl border border-white/10 bg-[#10192c] p-6 md:col-span-2">
+                    <div className="rounded-3xl border border-white/10 bg-[#10192c] p-6">
                         <h3 className="mb-5 text-xl font-bold">
                             Additional Skills
                         </h3>

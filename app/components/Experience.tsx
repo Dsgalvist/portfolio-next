@@ -54,12 +54,9 @@ export default function Experience() {
                         </div>
 
                         <p className="leading-7 text-slate-400">
-                            Currently working in construction, supporting on-site
-                            operations and assisting with tasks such as vapor barrier
-                            installation, insulation, drywall installation, and general
-                            site work. Developed strong teamwork, adaptability,
-                            communication, and problem-solving skills while working in
-                            fast-paced environments.
+                            Worked in construction supporting on-site operations, including vapor barrier installation, 
+                            insulation, drywall installation, and general site work. Developed strong teamwork, adaptability, 
+                            communication, and problem-solving skills while working in fast-paced environments.
                         </p>
                     </div>
 

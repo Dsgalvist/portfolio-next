@@ -14,34 +14,35 @@ export default function Hero() {
                     <div>
 
                         <p className="mb-5 text-sm font-bold uppercase tracking-[0.22em] text-lime-400">
-                            SOFTWARE DEVELOPMENT STUDENT & FULL-STACK DEVELOPER
+                            SOFTWARE DEVELOPER • FULL-STACK • CLOUD & AI
                         </p>
 
-                        <h1 className="mb-6 text-5xl font-extrabold leading-[0.95] md:text-6xl">
-                            Diego Galvis
+                        <h1 className="mb-6 text-5xl font-extrabold leading-[0.95] md:text-5xl">
+                            Diego Samuel
                             <br />
-                            Tapasco
+                            Galvis Tapasco
                         </h1>
 
                         <p className="mb-8 max-w-xl text-lg leading-8 text-gray-400">
-                            Software Development student at SAIT passionate about building 
-                            modern and responsive full-stack applications with real-world 
-                            functionality and clean user experiences.
+                            Software Development graduate from SAIT building
+                            full-stack, cloud, and AI-powered applications with
+                            a focus on scalable architecture, clean user experiences,
+                            and real-world solutions.
                         </p>
 
                         {/* STACK */}
-                        <div className="mb-10 flex flex-wrap gap-2">
+                        <div className="mb-10 grid w-fit grid-cols-3 gap-2">
                             {[
                                 "React",
-                                "Next.js",
                                 "TypeScript",
-                                "Firebase",
                                 "Python",
-                                "SQL",
+                                "Azure",
+                                "PostgreSQL",
+                                "Microsoft Foundry",
                             ].map((tech) => (
                                 <span
                                     key={tech}
-                                    className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-gray-200 backdrop-blur-md"
+                                    className="whitespace-nowrap rounded-full border border-white/10 bg-white/5 px-4 py-2 text-center text-sm font-medium text-gray-200 backdrop-blur-md"
                                 >
                                     {tech}
                                 </span>
@@ -50,17 +51,26 @@ export default function Hero() {
 
                         {/* BUTTONS */}
                         <div className="flex flex-wrap gap-4">
-
+                            
                             <a
                                 href="#projects"
-                                className="rounded-full bg-lime-400 px-7 py-3 font-bold text-black transition duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(163,230,53,0.25)]"
+                                className="rounded-full bg-lime-400 px-6 py-3 font-bold text-black transition hover:scale-105"
                             >
                                 View Projects
                             </a>
-
+                            
                             <a
-                                href="#contact"
-                                className="rounded-full border border-white/15 px-7 py-3 text-white transition duration-300 hover:border-lime-400 hover:text-lime-400"
+                            href="#"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="rounded-full border border-white/15 px-6 py-3 font-semibold text-white transition hover:border-lime-400 hover:text-lime-400"
+                            >
+                                Resume
+                            </a>
+                            
+                            <a
+                            href="#contact"
+                            className="rounded-full border border-white/15 px-6 py-3 font-semibold text-white transition hover:border-lime-400 hover:text-lime-400"
                             >
                                 Contact
                             </a>
