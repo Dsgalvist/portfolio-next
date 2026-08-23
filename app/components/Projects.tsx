@@ -5,39 +5,81 @@ import { useState } from "react";
 
 const projects = [
     {
-        title: "Currently Building",
-        stack: "Coming Soon",
+        title: "SuperMarkit",
+        stack: "React / TypeScript / Firebase / PostgreSQL / Azure",
         description:
-            "A new full-stack project currently in development focused on scalable architecture, modern UI/UX, and real-world functionality.",
-        primaryLabel: "Coming Soon",
-        secondaryLabel: "In Progress",
-        imageLabel: "Future Project",
-        primaryHref: "#",
-        secondaryHref: "#",
-    },
-
-    {
-        title: "LaptopHub",
-        stack: "Next.js / TypeScript / Firebase",
-        description:
-            "A full-stack marketplace platform for buying and selling laptops with authentication, advanced filtering, favorites, image uploads, and responsive UI design.",
+            "SuperMarkit is a centralized roofing management platform that replaces paper-based processes, reduces manual data entry, and connects key business workflows to improve operational efficiency and support data-driven decisions.",
         primaryLabel: "Live Demo",
         secondaryLabel: "GitHub",
-        image: "/projects/laptophub.png",
-        primaryHref: "https://laptophub-opal.vercel.app/",
-        secondaryHref: "https://github.com/Dsgalvist/laptophub",
+        image: "/projects/Supermarkit.png",
+        primaryHref: "http://52.162.183.99/signin",
+        secondaryHref: "https://github.com/anshpreetsingh007/Bytecraft-Capestone",
     },
 
     {
-        title: "ByteCraft — Inventory System Concept",
-        stack: "Systems Analysis / UI Design / Team Project",
+        title: "AI Support & Triage System",
+        stack: "Microsoft Foundry / AI Agents / Azure AI / Generative AI",
         description:
-            "A collaborative software analysis and design project focused on inventory tracking, employee management, and business workflow planning for a construction-focused company.",
+            "An AI-powered support workflow that automatically classifies incoming requests, routes them through specialized agents, and generates contextual responses to streamline support operations.",
         primaryLabel: "Details",
         secondaryLabel: "GitHub",
-        imageLabel: "ByteCraft",
+        imageLabel: "CRUD App",
         primaryHref: "#",
         secondaryHref: "#",
+    },
+
+    {
+        title: "SpeakFix (VMIS)",
+        stack: "Raspberry Pi / Python / Azure / Microsoft Foundry / OpenSCAD",
+        description:
+            "SpeakFix is a voice-powered maintenance system that transforms spoken issues into structured digital tickets, reducing manual reporting and helping facilities teams review and act on maintenance requests faster.",
+        primaryLabel: "Details",
+        secondaryLabel: "GitHub",
+        image: "/projects/speakfix1.png",
+        primaryHref: "https://aryansaini-71.github.io/speakfix/",
+        secondaryHref: "https://github.com/Dsgalvist/vmis-manager-dashboard",
+    },
+
+    {
+        title: "Nutritional Insights",
+        stack: "Azure Functions / Blob Storage / Cosmos DB / Python / Node.js / Chart.js",
+        description:
+            "Nutritional Insights is a cloud-based analytics platform that transforms nutritional data into interactive visualizations, helping users explore dietary patterns and compare key nutritional metrics through a responsive dashboard.",
+        primaryLabel: "Live Demo",
+        secondaryLabel: "GitHub",
+        image: "/projects/nutritional.png",
+        primaryHref: "https://blue-bush-041249b0f.7.azurestaticapps.net/login.html",
+        secondaryHref: "https://github.com/anshpreetsingh007/project-1",
+    },
+
+
+    {
+        title: "Android Malware Detection",
+        stack: "Python / SecML / SVM / DrebinRed / Adversarial ML",
+        description:
+             "A machine learning cybersecurity project that detects Android malware using a Linear SVM and evaluates its resilience against adversarial evasion attacks.",
+        primaryLabel: "View Notebook",
+        secondaryLabel: "View Results",
+        image: "/projects/android.png",
+        primaryHref: "https://colab.research.google.com/drive/1mOvzgZoBfw3mBKdrJmAk359V4WKscM_3?usp=sharing#scrollTo=NV3Ug9Y0VQpE",
+        details: `Model Performance
+        • Accuracy: 98.84%
+        • Detection Rate @ 1% FPR: 91.06%
+        • F1 Score: 88.07%
+        
+        Adversarial Testing
+        
+        A gradient-based evasion attack successfully changed a correctly detected malware sample from malicious to benign after modifying only 10 features.
+        
+        Robustness Evaluatio
+        • 0 modifications → 100% detection
+        • 4 modifications → 40% detection
+        • 8 modifications → 10% detection
+        • 12+ modifications → 0% detection
+        
+        Key Finding
+        
+        The model performs strongly on normal test data, but its detection capability drops significantly under adversarial manipulation.`,
     },
 
     {
@@ -47,37 +89,11 @@ const projects = [
             "Designed a language learning application focused on intuitive navigation, user engagement, and clean visual structure through research-driven UX decisions.",
         primaryLabel: "Watch Demo",
         secondaryLabel: "Details",
-        image: "/projects/figma.png",
+        image: "/projects/figma1.png",
         video: "/projects/figma.mp4",
         details: `This project focuses on designing a language learning application that addresses common issues such as paywalls, lack of engagement, and repetitive content.
-
-Through research including surveys and interviews, key user needs were identified across students, travelers, and professionals.
-
-The application was designed in Figma with a focus on intuitive navigation, interactive features, and modern UI structure. Features such as messaging, leaderboards, and notifications were added to improve usability and engagement.`,
-    },
-
-    {
-        title: "Database CRUD Application",
-        stack: "C# / SQL / WinForms",
-        description:
-            "A desktop CRUD application connected to a database with insert, update, delete, and data visualization functionality using C# and Windows Forms.",
-        primaryLabel: "Details",
-        secondaryLabel: "GitHub",
-        imageLabel: "CRUD App",
-        primaryHref: "#",
-        secondaryHref: "#",
-    },
-
-    {
-        title: "Shopping List Web App",
-        stack: "React / Next.js / Tailwind",
-        description:
-            "A shopping list application with dynamic item management and integrated meal recommendations using React state management and API integration.",
-        primaryLabel: "Live Demo",
-        secondaryLabel: "GitHub",
-        image: "/projects/shopping.png",
-        primaryHref: "https://cprg306-assignments-murex-eta.vercel.app/week-8",
-        secondaryHref: "https://github.com/Dsgalvist/cprg306-assignments",
+        Through research including surveys and interviews, key user needs were identified across students, travelers, and professionals.
+        The application was designed in Figma with a focus on intuitive navigation, interactive features, and modern UI structure. Features such as messaging, leaderboards, and notifications were added to improve usability and engagement.`,
     },
 ];
 
@@ -109,11 +125,7 @@ export default function Projects() {
                     {projects.map((project, index) => (
                         <article
                             key={project.title}
-                            className={`overflow-hidden rounded-3xl border bg-[#10192c] transition duration-300 hover:-translate-y-1 ${
-                                index === 0
-                                    ? "border-lime-400/30 shadow-[0_0_40px_rgba(163,230,53,0.06)]"
-                                    : "border-white/10 hover:border-lime-400/40"
-                            }`}
+                            className="overflow-hidden rounded-3xl border border-white/10 bg-[#10192c] transition duration-300 hover:-translate-y-1 hover:border-lime-400/40"
                         >
 
                             {/* IMAGE */}
@@ -172,11 +184,7 @@ export default function Projects() {
                                             href={project.primaryHref}
                                             target="_blank"
                                             rel="noreferrer"
-                                            className={`rounded-full px-5 py-3 font-bold transition ${
-                                                index === 0
-                                                    ? "cursor-default border border-lime-400/20 bg-lime-400/10 text-lime-400"
-                                                    : "bg-lime-400 text-black hover:scale-105"
-                                            }`}
+                                            className="rounded-full bg-lime-400 px-5 py-3 font-bold text-black transition hover:scale-105"
                                         >
                                             {project.primaryLabel}
                                         </a>
