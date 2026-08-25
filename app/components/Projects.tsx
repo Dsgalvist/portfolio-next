@@ -24,7 +24,7 @@ const projects = [
         primaryLabel: "Live Demo",
         secondaryLabel: "GitHub",
         image: "/projects/GestureVision.png",
-        primaryHref: "https://gesture-vision-gcxdm7qcb-diegos-projects-dcd7c43c.vercel.app/",
+        primaryHref: "https://gesture-vision-nine.vercel.app/",
         secondaryHref: "https://github.com/Dsgalvist/GestureVision",
     },
 
