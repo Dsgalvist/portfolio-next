@@ -33,7 +33,7 @@ export default function Contact() {
                             <div className="flex flex-wrap gap-4">
 
                                 <a
-                                    href="mailto:your@email.com"
+                                    href="mailto:diegogalvis682@gmail.com?subject=Portfolio%20Contact&body=Hi%20Diego%2C%0D%0A%0D%0AIt's%20nice%20to%20connect%20with%20you.%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch.%0D%0A%0D%0ABest%2C"
                                     className="rounded-full bg-lime-400 px-6 py-3 font-bold text-black transition duration-300 hover:scale-105"
                                 >
                                     Email Me
@@ -49,7 +49,7 @@ export default function Contact() {
                                 </a>
 
                                 <a
-                                    href="https://linkedin.com"
+                                    href="https://www.linkedin.com/in/diego-galvis-63014b2bb"
                                     target="_blank"
                                     rel="noreferrer"
                                     className="rounded-full border border-white/15 px-6 py-3 font-semibold transition duration-300 hover:border-lime-400 hover:text-lime-400"
