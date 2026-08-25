@@ -17,15 +17,15 @@ const projects = [
     },
 
     {
-        title: "AI Support & Triage System",
-        stack: "Microsoft Foundry / AI Agents / Azure AI / Generative AI",
+        title: "GestureVision",
+        stack: "Next.js / TypeScript / MediaPipe / Three.js / Computer Vision",
         description:
-            "An AI-powered support workflow that automatically classifies incoming requests, routes them through specialized agents, and generates contextual responses to streamline support operations.",
-        primaryLabel: "Details",
+            "An interactive computer vision experience that transforms real-time hand gestures into browser controls, enabling gesture-based navigation, precision challenges, and 3D interactions using webcam hand tracking.",
+        primaryLabel: "Live Demo",
         secondaryLabel: "GitHub",
-        imageLabel: "CRUD App",
-        primaryHref: "#",
-        secondaryHref: "#",
+        image: "/projects/GestureVision.png",
+        primaryHref: "https://gesture-vision-gcxdm7qcb-diegos-projects-dcd7c43c.vercel.app/",
+        secondaryHref: "https://github.com/Dsgalvist/GestureVision",
     },
 
     {
