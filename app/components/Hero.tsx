@@ -42,7 +42,11 @@ export default function Hero() {
                             ].map((tech) => (
                                 <span
                                     key={tech}
-                                    className="whitespace-nowrap rounded-full border border-white/10 bg-white/5 px-4 py-2 text-center text-sm font-medium text-gray-200 backdrop-blur-md"
+                                    className={`whitespace-nowrap rounded-full border border-white/10 bg-white/5 px-4 py-2 text-center text-sm font-medium text-gray-200 backdrop-blur-md ${
+                                        tech === "Microsoft Foundry"
+                                        ? "max-sm:px-2 max-sm:text-[11px]"
+                                        : ""
+                                    }`}
                                 >
                                     {tech}
                                 </span>
@@ -50,27 +54,26 @@ export default function Hero() {
                         </div>
 
                         {/* BUTTONS */}
-                        <div className="flex flex-wrap gap-4">
-                            
+                        <div className="grid w-full max-w-lg grid-cols-3 gap-3">
                             <a
                                 href="#projects"
-                                className="rounded-full bg-lime-400 px-6 py-3 font-bold text-black transition hover:scale-105"
+                                className="flex items-center justify-center rounded-full bg-lime-400 px-3 py-3 text-center text-sm font-bold text-black transition hover:scale-105"
                             >
                                 View Projects
                             </a>
                             
                             <a
-                            href="/resume.pdf"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="rounded-full border border-white/15 px-6 py-3 font-semibold text-white transition hover:border-lime-400 hover:text-lime-400"
+                                href="/resume.pdf"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="flex items-center justify-center rounded-full border border-white/15 px-3 py-3 text-center text-sm font-semibold text-white transition hover:border-lime-400 hover:text-lime-400"
                             >
                                 Resume
                             </a>
                             
                             <a
-                            href="#contact"
-                            className="rounded-full border border-white/15 px-6 py-3 font-semibold text-white transition hover:border-lime-400 hover:text-lime-400"
+                                href="#contact"
+                                className="flex items-center justify-center rounded-full border border-white/15 px-3 py-3 text-center text-sm font-semibold text-white transition hover:border-lime-400 hover:text-lime-400"
                             >
                                 Contact
                             </a>
