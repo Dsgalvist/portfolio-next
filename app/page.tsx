@@ -10,6 +10,7 @@ import Contact from "./components/Contact";
 import Certificatios from "./components/Certifications";
 import Game from "./components/Game";
 import ScrollToTop from "./components/ScrollToTop";
+import PortfolioChat from "./components/PortfolioChat";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <Languages />
       <Contact />
       <ScrollToTop />
+      <PortfolioChat />
     </>
   );
 }
