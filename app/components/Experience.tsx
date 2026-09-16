@@ -21,42 +21,43 @@ export default function Experience() {
 
                 <div className="space-y-6">
 
-                    {/* MOUNTAIN AIR */}
+                    {/* MEKK S.A.S. */}
                     <div className="rounded-3xl border border-white/10 bg-[#10192c] p-6 transition duration-300 hover:border-lime-400/40">
-
+                    
                         <div className="mb-5 flex items-start gap-4">
                             
                             <Image
-                                src="/experience/mountain.png"
-                                alt="ForConcrete logo"
+                                src="/experience/mekk-sas.png"
+                                alt="MEKK S.A.S. logo"
                                 width={70}
                                 height={70}
                                 className="h-16 w-16 rounded-xl object-contain"
                             />
-
+                            
                             <div>
                                 <h3 className="text-xl font-bold md:text-2xl">
-                                    Mountain Air Construction LTD
+                                    MEKK S.A.S. — Web Developer
                                 </h3>
-
+                                
                                 <p className="mt-1 text-sm text-slate-500">
-                                    Construction Worker · Contract Part-time
+                                    Remote · Freelance
                                 </p>
-
+                                
                                 <p className="mt-1 text-sm text-slate-500">
-                                    Calgary, Alberta · On-site
-                                </p>
-
-                                <p className="mt-1 text-sm text-slate-500">
-                                    Sep 2025 - May 2026 · 9 mos
+                                    Aug 2026 - Sep 2026 · 1 mo
                                 </p>
                             </div>
                         </div>
 
                         <p className="leading-7 text-slate-400">
-                            Worked in construction supporting on-site operations, including vapor barrier installation, 
-                            insulation, drywall installation, and general site work. Developed strong teamwork, adaptability, 
-                            communication, and problem-solving skills while working in fast-paced environments.
+                            Worked as part of a two-developer team to redesign and build MEKK S.A.S.&apos;s
+                            corporate website using React, TypeScript, Vite, and Tailwind CSS. I focused on
+                            creating the product experience, including a catalog of 70+ products with search,
+                            filters, sorting, pagination, detailed product pages, related products, and an
+                            interactive image zoom. I also implemented the WhatsApp contact flow, using a
+                            serverless API and Upstash Redis to rotate customer inquiries between advisors.
+                            Along the way, I worked on responsive design, integration, testing, bug fixes,
+                            and the final Vercel deployment to get the site ready for production.
                         </p>
                     </div>
 

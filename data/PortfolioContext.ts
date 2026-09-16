@@ -26,15 +26,20 @@ EDUCATION
 
 PROFESSIONAL EXPERIENCE
 
-Mountain Air Construction LTD
-Role: Construction Worker
-Type: Contract Part-time
-Location: Calgary, Alberta
-Dates: Sep 2025 – May 2026
+MEKK S.A.S.
+Role: Web Developer
+Type: Freelance
+Location: Remote
+Dates: Aug 2026 – Sep 2026
+Duration: 1 month
 Details:
-- Supported on-site operations.
-- Worked with vapor barrier installation, insulation, drywall installation, and general site work.
-- Developed teamwork, adaptability, communication, and problem-solving skills.
+- Worked as part of a two-developer team to redesign and build the MEKK S.A.S. corporate website.
+- Built the site using React, TypeScript, Vite, and Tailwind CSS.
+- Focused on the product experience, including a catalog of 70+ specialized electrical products.
+- Developed search, category filters, sorting, pagination, dynamic product pages, technical specifications, related products, and an interactive Amazon-style image zoom.
+- Implemented the WhatsApp contact flow using a serverless API and Upstash Redis to rotate customer inquiries between advisors.
+- Worked on responsive desktop and mobile design, SPA navigation, integration, testing, bug fixes, and production preparation.
+- Deployed the completed website using Vercel.
 
 ForConcrete
 Role: Junior Web Developer
@@ -224,6 +229,7 @@ Frontend:
 - TypeScript
 - React
 - Next.js
+- Vite
 - Tailwind CSS
 
 Backend & Cloud:
@@ -231,12 +237,14 @@ Backend & Cloud:
 - Express.js
 - Flask
 - REST APIs
+- Serverless APIs
 - Microsoft Azure
 - Azure Functions
 - Azure Blob Storage
 - Supabase
 - Firebase
 - Firestore
+- Upstash Redis
 
 AI & Machine Learning:
 - Microsoft Foundry
