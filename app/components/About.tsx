@@ -26,9 +26,9 @@ const content = {
       </>
     ),
     intro:
-      "I'm Diego Galvis, a software developer with a background in digital design. I work closely with you to understand the people you want to reach and what your business needs, then turn that understanding into a useful, engaging digital experience.",
+      "I'm Diego Galvis, a software developer. I work closely with you to understand what your company needs and how best to connect with the people and businesses you want to reach. From there, I turn your idea into a clear, easy-to-use digital experience designed to support your company's goals.",
     detail:
-      "I studied Programming and Digital Design at Colegio Lausana and Software Development at SAIT. I build websites and mobile apps that help your business connect with customers. I also develop AI agents and work with cloud technology.",
+      "I studied Programming and Digital Design at Colegio Lausana and Software Development at the Southern Alberta Institute of Technology in Calgary, Canada. I build websites and mobile and web apps that help your business connect with customers. I also develop AI agents and work with cloud technology.",
     credentialsLabel: "CERTIFICATIONS & LEARNING",
     completedLabel: "Completed",
     inProgressLabel: "In progress",
@@ -65,9 +65,9 @@ const content = {
       </>
     ),
     intro:
-      "Soy Diego Galvis, desarrollador de software con formación en diseño digital. Trabajo contigo para entender a las personas a las que quieres llegar y lo que necesita tu negocio; desde ahí convierto esa idea en una experiencia digital útil y atractiva.",
+      "Soy Diego Galvis, desarrollador de software. Trabajo de la mano contigo para entender qué necesita tu empresa y cómo conectar de la manera más apropiada con las personas y empresas a las que quieres llegar. Desde ahí convierto tu idea en una experiencia digital clara, fácil de usar y pensada para impulsar los objetivos de tu empresa.",
     detail:
-      "Me formé como programador y diseñador digital en el Colegio Lausana y en Desarrollo de Software en SAIT. Creo sitios web y aplicaciones móviles que ayudan a tu negocio a conectar con sus clientes. También desarrollo agentes de IA y trabajo con tecnología cloud.",
+      "Me formé como programador y diseñador digital en el Colegio Lausana y en Desarrollo de Software en el Southern Alberta Institute of Technology, en Calgary, Canadá. Creo sitios web y aplicaciones web y móviles que ayudan a tu negocio a conectar con sus clientes. También desarrollo agentes de IA y trabajo con tecnología cloud.",
     credentialsLabel: "CERTIFICACIONES Y FORMACIÓN",
     completedLabel: "Completados",
     inProgressLabel: "En curso",

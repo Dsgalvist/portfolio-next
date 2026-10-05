@@ -104,8 +104,8 @@ export default function Contact({ lang }: { lang: Language }) {
               </h2>
               <p className="mt-4 max-w-lg text-base leading-7 text-[#39555a]">
                 {es
-                  ? "Háblame de tu negocio y de lo que te gustaría crear o mejorar. Empecemos con una conversación clara."
-                  : "Tell me about your business and what you'd like to create or improve. Let's start with a clear conversation."}
+  ? "Hablemos de tu idea, emprendimiento o negocio y de lo que te gustaría crear o mejorar. Juntos podemos definir cómo conectar mejor con tus clientes y hacer que tu negocio sea más eficiente y productivo."
+  : "Let's talk about your idea, venture, or business and what you'd like to create or improve. Together, we can explore how to connect better with your customers and make your business more efficient and productive."}
               </p>
 
               <div className="relative mt-6 max-w-[400px] overflow-hidden rounded-[1.3rem] border border-[#8fb8ad]/35 bg-[#091724] p-2 shadow-[0_25px_65px_rgba(9,31,40,.22)]">

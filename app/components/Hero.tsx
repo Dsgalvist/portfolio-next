@@ -105,8 +105,8 @@ export default function Hero({ lang = "en" }: { lang?: Language }) {
 
           <p className="mt-4 max-w-[575px] text-sm leading-6 text-[#d0dce3] sm:mt-6 sm:text-lg sm:leading-8">
             {es
-              ? "Diseño y desarrollo sitios web y aplicaciones que hacen que tu negocio se vea mejor, sea fácil de usar y conecte con más personas."
-              : "I design and build websites and applications that make your business look its best, feel easy to use, and connect with more people."}
+              ? "Diseño y desarrollo sitios web y aplicaciones atractivas fáciles de usar para tu negocio, que conecten con más personas de tal forma que se vuelva mucho más productivo y rentable."
+              : "I design and build attractive, easy-to-use websites and applications for your business. Helping it connect with more people so it becomes much more productive and profitable."}
           </p>
 
           <div className="mt-5 grid grid-cols-[minmax(0,1fr)_auto] gap-2.5 sm:mt-8 sm:flex sm:flex-wrap sm:items-center sm:gap-3">

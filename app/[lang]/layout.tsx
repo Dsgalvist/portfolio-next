@@ -13,11 +13,15 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   const { lang } = await params;
   const es = lang === "es";
   return {
-    title: es ? "Diego Galvis | Desarrollador Full Stack, Cloud e IA" : "Diego Galvis | Full Stack Developer, Cloud & AI",
+    title: es ? "Diego Galvis | Portfolio" : "Diego Galvis | Portfolio",
     description: es
       ? "Transformo ideas de negocio en experiencias digitales. Desarrollo full stack, servicios cloud y agentes de IA."
       : "I turn business ideas into digital experiences with full stack development, cloud services and AI agents.",
-    icons: { icon: "/brand/logo-letras.png" },
+    icons: {
+  icon: "/brand/favicon.png?v=3",
+  shortcut: "/brand/favicon.png?v=3",
+  apple: "/brand/favicon.png?v=3",
+},
     alternates: { canonical: `/${lang}`, languages: { en: "/en", es: "/es" } },
   };
 }
